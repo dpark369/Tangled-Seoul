@@ -99,12 +99,13 @@ body {
 	margin: 0;
 }
 
-#header {
-	margin-top: 50px;
-}
-
-#header img {
+/* Carousel */
+#main-carousel {
+	min-height: 100vh;
+	position: fixed;
+	top: 0;
 	width: 100%;
+	z-index: -1;
 }
 
 /* Footer CSS */
