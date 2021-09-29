@@ -4,10 +4,10 @@
 	--yellow: #e4efa1;
 }
 
+/* General  */
 body {
 	font-family: Nunito, sans-serif;
 	color: black;
-	width: 100vw;
 }
 
 /* Loader */
@@ -74,6 +74,16 @@ body {
 	border: 0;
 }
 
+/* Carousel */
+
+.main-carousel {
+	top: 0;
+	left: 0;
+	padding: 0;
+	width: 100%;
+	z-index: -1;
+}
+
 /* Header CSS */
 
 #main-logo {
@@ -99,13 +109,10 @@ body {
 	margin: 0;
 }
 
-/* Carousel */
-#main-carousel {
-	min-height: 100vh;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: -1;
+/* Gallery */
+#main-gallery div {
+	margin: 0;
+	padding: 0;
 }
 
 /* Footer CSS */
@@ -179,3 +186,14 @@ body {
 .footer-area .footer-main .widget-item .widget-social-icons a:last-child {
 	margin: 0;
 } */
+
+/* Responsive */
+/* Logo */
+@media screen and (max-width: 500px) {
+	#main-logo {
+		font-size: 3rem;
+	}
+	#nav-logo {
+		width: 25px;
+	}
+}
