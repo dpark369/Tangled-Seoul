@@ -1,6 +1,6 @@
-// Changes Carousel img based on orientation
-
-window.addEventListener('resize', function orientationHandler() {
+// Changes Carousel img based on orientation imediately
+let orientationHandler;
+(orientationHandler = function () {
 	let portrait;
 	if (window.innerHeight > window.innerWidth) {
 		portrait = true;
@@ -10,11 +10,19 @@ window.addEventListener('resize', function orientationHandler() {
 	if (portrait) {
 		let imgNL = document.querySelectorAll('.carousel-item > img');
 		let imgArray = Array.from(imgNL);
-		console.log(imgArray);
 		for (let i = 0; i < imgArray.length; i++) {
 			imgArray[i].src = `./img/shop_img/portrait${i + 1}.jpeg`;
 		}
+	} else {
+		let imgNL = document.querySelectorAll('.carousel-item > img');
+		let imgArray = Array.from(imgNL);
+		for (let i = 0; i < imgArray.length; i++) {
+			imgArray[i].src = `./img/shop_img/carousel${i + 1}.jpeg`;
+		}
 	}
-});
+})();
 
-// Fix only firing once
+// Listens for resizing events
+window.addEventListener('resize', function () {
+	orientationHandler();
+});
