@@ -8,6 +8,7 @@
 body {
 	font-family: Nunito, sans-serif;
 	color: black;
+	background-color: ;
 }
 
 /* Loader */
@@ -23,7 +24,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 8rem;
+	font-size: 4rem;
 	font-weight: 400;
 }
 .page-loader.slide-out-right {
@@ -39,8 +40,8 @@ body {
 	opacity: 0;
 }
 .page-loader .circle {
-	height: 6rem;
-	width: 6rem;
+	height: 3rem;
+	width: 3rem;
 	border: 5px solid var(--yellow);
 	border-right-color: transparent;
 	border-radius: 50%;
@@ -73,15 +74,14 @@ body {
 .navbar-toggler {
 	border: 0;
 }
-
-/* Carousel */
-
-.main-carousel {
-	top: 0;
-	left: 0;
-	padding: 0;
-	width: 100%;
-	z-index: -1;
+.offcanvas {
+	max-width: 50%;
+}
+.offcanvas-end {
+	width: 300px;
+}
+.offcanvas-body {
+	text-align: center;
 }
 
 /* Header CSS */
@@ -105,14 +105,23 @@ body {
 }
 #main-slogan {
 	text-align: center;
-	font-family: Taviraj;
+	font-family: 'Taviraj';
 	margin: 0;
+}
+
+/* Transition */
+.transition {
+	font-family: 'Taviraj';
 }
 
 /* Gallery */
 #main-gallery div {
 	margin: 0;
 	padding: 0;
+}
+
+.p-6 {
+	padding: 4rem;
 }
 
 /* Footer CSS */
@@ -188,12 +197,29 @@ body {
 } */
 
 /* Responsive */
+
 /* Logo */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
+	body {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 540px) {
 	#main-logo {
 		font-size: 3rem;
 	}
 	#nav-logo {
 		width: 25px;
+	}
+}
+
+/* Gallery */
+/* gets rid of original diagonal padding for gallery and adds padding to every other element */
+@media screen and (max-width: 540px) {
+	.p-6 {
+		padding: 0;
+	}
+	#main-gallery .col-sm-6:nth-of-type(2n) {
+		padding: 3rem;
 	}
 }
