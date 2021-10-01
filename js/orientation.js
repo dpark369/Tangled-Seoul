@@ -11,13 +11,15 @@ let orientationHandler;
 		let imgNL = document.querySelectorAll('.carousel-item > img');
 		let imgArray = Array.from(imgNL);
 		for (let i = 0; i < imgArray.length; i++) {
-			imgArray[i].src = `./img/shop_img/portrait${i + 1}.jpeg`;
+			imgArray[i].src = `./img/shop_img/portrait${i + 1}.jpg
+			`;
 		}
 	} else {
 		let imgNL = document.querySelectorAll('.carousel-item > img');
 		let imgArray = Array.from(imgNL);
 		for (let i = 0; i < imgArray.length; i++) {
-			imgArray[i].src = `./img/shop_img/carousel${i + 1}.jpeg`;
+			imgArray[i].src = `./img/shop_img/carousel${i + 1}.jpg
+			`;
 		}
 	}
 })();
