@@ -110,6 +110,10 @@ body {
 }
 
 /* Gallery */
+
+.img-fluid {
+	width: 100%;
+}
 #main-gallery div {
 	margin: 0;
 	padding: 0;

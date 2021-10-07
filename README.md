@@ -1,5 +1,7 @@
 # Tangled-Seoul
 
-A landing page for an accessory shop based in Seoul, South Korea
+A responsive landing page for an accessory shop based in Seoul, South Korea.
 
 ## Tech used
+
+HTML, CSS, Javascript and Bootstrap 5
